@@ -1,0 +1,31 @@
+Chmod WhoWhatWhich file | Directory
+
+Who - Represents identities: u,g,o,a (User,Group,Other,All)
+
+What - Represents Actions: +,-,= (Add,Remove,Set,Exact)
+
+Which - Represents Access Levels: r,w,x (Read,Write,Execute)
+
+
+Example:-
+1) chmod ug+rw file.txt
+2) chmod g-w xmatter.sh
+3) chmod a+rw file2.csv
+
+Another way to assign permissions:-
+
+rwx - 7 - 111 - read+write+execute
+rw  - 6 - 110 - read+write
+r-x - 5 - 101 - read+execute
+r-- - 4 - 100 - read
+-wx - 3 - 011 - write+execute
+-w- - 2 - 010 - write
+--x - 1 - 001 - execute
+--- - 0 - 000 - None
+
+
+Example:-
+1) chmod 400 file.txt
+2) chmod 666 file2.txt
+3) chmod 777 xmatter.sh
+        
